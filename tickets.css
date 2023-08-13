@@ -1,0 +1,373 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./ticketspage.jpg);
+    background-position: center;
+    background-size: cover; 
+    box-sizing: border-box;
+   }
+   
+   .tickets-heading{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+     margin-left: 40%;
+    margin-top: 50px;
+  
+    
+   }
+
+   .backk-button{
+
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-right: 40%;
+    margin-top: -100%;
+    
+    
+   }
+
+
+  .ticket-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.309);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; 
+  }
+  
+
+  
+  
+  
+  
+  .cover-page {
+    background-color: #fb980d8a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 60%; 
+    display: flex; 
+
+      
+  }
+  
+  .cover-page h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .section {
+    margin: 20px 0;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .calendar label,
+  .guests h2,
+  .duration label {
+    font-size: 20px;
+    font-weight: bold;
+    color:#fb980d8a;
+  }
+  
+  .calendar {
+   
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .calendar input {
+    font-size: 18px;
+    padding: 8px;
+    border: 2px solid #ccc;
+  }
+  
+  .guests{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 410px;
+  }
+  
+  .ticket-category {
+    margin: 10px 0;
+    flex: 0 1 calc(33.33% - 10px);
+  }
+  
+  .ticket-category label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .ticket-category input {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    border: 2px solid #ccc;
+  }
+  
+  .table-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .summary-table {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .summary-table h2 {
+    margin-bottom: 10px;
+    color:#fb980d8a;
+  }
+  
+  .summary-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  .summary-table th,
+  .summary-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .summary-table th {
+    background-color: #fb980d8a;
+    color: white;
+  }
+  
+  .summary-table td {
+    font-size: 18px;
+  }
+
+  .continue-button{
+
+    font-size: 18px;
+    
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 80%;
+    margin-left: 40%;
+  }
+
+  
+  .continue-btn {
+  
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .continue-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  
+  
+  .cover-page h1 {
+    font-size: 36px;
+    margin: 0;
+    width: 100%;
+  }
+  
+.duration-topic{
+  margin-top: 0%;
+  margin-left: 20%;
+}
+
+.duration-main{
+margin-bottom: 10%;
+}
+
+
+  .calendar,
+  .guests,
+  .duration-main {
+    margin: 10px;
+    flex:  300px; 
+  }
+  
+  .calendar label,
+  .guests h2,
+  .duration-main label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .calendar input,
+  .guests input,
+  .duration-main select {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  
+  .ticket-category {
+    margin: 5px;
+    flex: 1 1 150px;
+  }
+  
+  .ticket-category label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .ticket-category input {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .duration select {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+   
+  }
+  
+  .continue-btn {
+    background-color: #fff;
+    color: #fb980d8a;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid#fb980d8a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .continue-btn:disabled {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  
+  .continue-btn:hover:not([disabled]) {
+    background-color:#fb980d8a;
+    color: #fff;
+  }
+
+
+  
+  
+  
+ 
+  .guests {
+    display: flex;
+    justify-content: center;
+  
+   
+  }
+  
+  .ticket-category {
+    margin: 10px;
+    text-align: center;
+  }
+ 
+
+
+  
+  .price-table {
+      width: 10vw;
+      text-align: left;
+
+      margin-right: -1%;
+      margin-top: 5%;
+      color:#ffffff;
+      font-size: 15px;
+  }
+
+
+  
+
+@media (max-width: 768px) {
+  .ticket-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .cover-page {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-top: 0; 
+  }
+  
+  .calendar,
+  .guests,
+  .duration-main {
+    flex: 1; 
+    margin: 0;
+  }
+  
+  .duration-topic {
+    margin-left: 0; 
+  }
+  
+  .calendar label,
+  .guests h2,
+  .duration-main label {
+    font-size: 16px; 
+  }
+  
+  .calendar input,
+  .guests input,
+  .duration-main select {
+    font-size: 16px;
+  }
+  
+  .ticket-category {
+    margin: 5px;
+  }
+  
+  .continue-button {
+    margin: 20px 0;
+  }
+  
+  .price-table {
+    width: 100%; 
+    margin-top: 20px; 
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+  

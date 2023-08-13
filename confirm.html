@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation Page</title>
+  <link rel="stylesheet" href="confirm.css">
+</head>
+
+
+
+<body>
+
+  <h1 class="tickets-heading">BUY TICKETS</h1>
+  
+
+
+  <div class="confirmation-page">
+    <h2>Confirmation</h2>
+    <strong><p>Thank you for your order. Your order has been confirmed with us. <br> You can show this confirmation at the entrance. <br></p></strong>
+    <h3>Summary of Your Order</h3>
+    <table id="order-summary">
+      <tr>
+        <td>Name</td>
+        <td id="name"></td>
+      </tr>
+      <tr>
+        <td>Date</td>
+        <td id="date"></td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td id="time"></td>
+      </tr>
+      <tr>
+        <td>Duration</td>
+        <td id="duration"></td>
+      </tr>
+      <tr>
+        <td>Mobile</td>
+        <td id="mobile"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td id="email"></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td id="gender"></td>
+      </tr>
+    </table>
+    <h3>Tickets</h3>
+    <table id="ticket-summary">
+      <!-- Ticket details will be populated dynamically using JavaScript -->
+    </table>
+    <p id="total-payable">Total Payable: <span id="total-amount"></span></p>
+  </div>
+  <script src="confirm.js"></script>
+</body>
+</html>
