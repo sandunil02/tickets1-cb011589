@@ -1,0 +1,2020 @@
+
+:root{
+    --dekstop:18.75rem;
+}
+*
+   {
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif,'Yanone Kaffeesatz','Mukta', sans-serif ,'Raleway', sans-serif,'Archivo Black', sans-serif,'Archivo Black', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+   }
+ 
+.photo{ 
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),no-repeat center center fixed url(./homepic2.jpg) ;
+    background-position: center;
+    padding-right: 0px;
+  
+  
+}
+
+
+.logo{
+    width: 80px;
+    cursor: pointer;
+    margin-right: 40px;
+   margin-left: 50px;  
+   margin-top: 40px;
+   
+}
+
+ /*............ Nav bar for all pages........*/
+
+ nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    padding-left: 180px ;
+    
+    
+    
+}
+
+/*.aboutus{
+margin-right: 2px;
+}*/
+nav ul{
+    flex: 1;
+    text-align: center;
+    padding-right: 30px;
+    margin-top: -50px;
+
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px;
+    padding: 13px ,35px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+    
+    border-radius: 50px;
+    transition: 0.3s;
+
+}
+
+nav ul li a:hover
+{
+    color:white;
+}
+
+nav ul li a:after{
+    width:0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff; 
+    transition: width 0.3s;
+
+
+
+}
+
+nav ul li a:hover:after{
+    width:50%;
+
+}
+
+.active
+{
+    color:rgba(255, 113, 5, 0.737);
+    
+}
+
+
+.dropdown ul li:hover {
+    color: rgba(250, 103, 5, 0.968)
+}
+
+.navbar .dropdown .dropbtn:hover{
+    color: rgba(250, 103, 5, 0.968)
+}
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+   
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 18px; 
+    border: none;
+    outline: none;
+    color:white;
+    background-color: inherit;
+    font-family: inherit; 
+    padding-right: 100px;
+   
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgba(126, 113, 113, 0.654);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+    /*.....................................end of nav bar................*/
+
+    /*...................footer starting ..............*/
+
+    footer{
+
+        background-color: #000;
+    }
+
+    .footerinside{
+        width: 100vw;
+        padding: 70px 30px 20px;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    /*........... ...............................start social medai icons.............*/
+
+    
+   
+    .icon
+    {
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+        border-radius: 50%;
+    
+    }
+
+   
+    
+    /*........... ..........................end.....of... social medai icons.............*/
+
+    
+    
+    
+
+
+    .footernav{
+
+        margin: 30px 0;
+    }
+     
+    .footernav ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: nonedisc;
+
+    }
+
+    .footernav ul li a{
+
+        color: whitesmoke;
+        margin: 30px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.5s;
+
+    }
+ 
+    .footernav ul li a:hover{
+
+        opacity: 1;
+    }
+
+    .footer-bottom{
+
+        background-color: rgba(133, 133, 133, 0.648);
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    .footer-bottom p{
+        color: white;
+    }
+
+    .desinger{
+
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+    }
+
+   /*...................footer ending ..............*/
+
+
+
+    /*,..........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,go to top.........*/
+    .button1{
+    
+        border-radius: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(4, 3, 3);
+        border: 1px solid rgb(8, 8, 8);
+        padding: 8px 20px;
+        font-size: 10px;
+        background: transparent;
+        position:relative;
+        cursor: pointer;
+        margin-left: 90%;
+        margin-bottom: 15px;
+    }
+    .button1:hover{
+        border: 1px solid hsl(0, 0%, 100%);
+        background: orange;
+        transition: 1s ;
+    }
+
+
+    /*........responsive.   over.....*/
+    
+
+
+    /*,..........,,,,,,,,,,,,,,,,,,,,,,,end of,,,,,,,,,,,,go to top.........*/
+
+
+  .topic1{
+    text-align: center;
+   margin-top: 220px;
+  }
+  .topic1{
+    font-size: 70px;
+    color: aliceblue;
+   font-weight: 600;
+   transition: 0.5s;
+  }
+  .topic1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+  }
+
+  .purchase{
+    float: right;
+    padding-left:-6px;
+    padding-top: 10px;
+ }
+   .homenav{
+    float: right;
+    padding-top:10px;
+   }
+   .introdiction{
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size: 20px;
+    font-stretch: condensed;
+    font-weight: 10px;
+    color: rgb(33, 33, 33);
+    
+
+   }
+   
+   
+   .secondtopic{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 90px;
+    margin-right: 1000px;
+    margin-left: 120px;
+    color: rgb(250, 103, 5);
+
+   }
+   .button{
+    font-family:'Poppins' ;
+    display: inline-block;
+    color: rgb(246, 250, 251);
+    border: 3px solid whitesmoke;
+    padding: 12px 34px;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+     margin-left: 40%;
+    margin-top: 60px;
+    border-radius: 10px;
+    
+}
+.button:hover{
+color: rgba(255, 113, 5, 0.737);
+-webkit-text-stroke: 0.1008px
+
+}
+.secondtopicpara{
+    font-family: 'Mukta', sans-serif;
+    font-size: 19px;
+    margin-right: 110px;
+    margin-left: 670px;
+    margin-top: -370px;
+    font-weight: 20px;
+    text-align: justify;
+    color: rgb(33, 33, 33);
+}
+.populationintro{/*....... population of sri lanka trutle....*/
+    font-family: 'Archivo Black', sans-serif ;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 50px;
+    color: rgba(250, 103, 5, 0.968);
+
+}
+.populationintro-para{
+    font-family: 'Mukta';
+    text-align: justify;
+    margin-top: 90px;
+    margin-left:650px;
+    margin-right: 300px;
+    font-size: 20px;
+    font-stretch: condensed;
+    font-weight: 20px;
+    color: rgb(33, 33, 33);
+
+}
+.populationintro-para-photo{
+    height: 60%;
+    width: 23%;
+    margin-left: -30%;
+    margin-top: -30%;
+    position: absolute;
+    
+}
+.topicintro{
+
+    font-family:'Poppins' ;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 70px;
+
+}
+.container{
+    width: 75vmin;
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    top: 327%;/*...............to be changed......*/
+    right: 8%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 10px 25px 28px rgba(0, 0, 0, 0.397);
+    overflow: hidden;
+}
+
+.img-container{
+    width:100%;
+    display:flex;
+    animation: slide 10s infinite; 
+}
+img{
+width: 100%;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+
+    30%{
+        transform: translateX(-100%);
+    }
+
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+
+}
+
+
+/*........responsive......*/
+
+@media (max-width: 414px) {
+    .container {
+      width: 90vw;
+      height: 30%;
+      position: static;
+      top: unset;
+      right: unset;
+      left: unset;
+      transform: none;
+      margin: 0 auto;
+    }
+  
+    .img-container {
+      animation: none;
+    }
+  }
+  
+  /*........responsive.   over.....*/
+
+
+.thirdtopic{
+    text-align: center;
+    margin-top: 45%;
+}
+.thirdtopic{
+    font-style: inherit;
+    font-family: 'Poppins';
+    font-size: 50px; 
+    color: rgb(0, 125, 163);   
+}
+.plces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+
+}
+.card{/*...........................ahangama rotate card*/
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 40px;
+    margin-top: 3.75rem;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.8s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+ .card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 10px;
+    line-height: 10px;
+ }
+ .card .back .link a {
+    color: #f3f3f3;
+ }
+ .card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+ }
+.card .back p{
+    letter-spacing: 1px;
+}
+ .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+ }
+ .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+ }/*............................. .......................end of ahangama rotate card*/
+
+ .card1{/*,,,,,,,,,,,,,,,,,,ambalanagoda rotate card,,,,,,,,,,*/
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-left: 27%;
+    margin-top: -390px;
+}
+.card1 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .8s;
+}
+.card1 .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card1 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card1 .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+}
+.card1 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+ .card1 .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 10px;
+    line-height: 10px;
+ }
+ .card1 .back .link a {
+    color: #f3f3f3;
+ }
+ .card1 .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+ }
+.card1 .back p{
+    letter-spacing: 1px;
+}
+ .card1:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+ }
+ .card1:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+ }/*..................................................... end of amblangoda rotate card*/
+
+
+ .card2{/*.....................galle rotate card,,,,,,,,,,,*/
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-left: 52%;
+    margin-top: -353px;
+}
+.card2 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .8s;
+}
+.card2 .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card2 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card2 .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+}
+.card2 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+ .card2 .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 10px;
+    line-height: 10px;
+ }
+ .card2 .back .link a {
+    color: #f3f3f3;
+ }
+ .card2 .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+ }
+.card2 .back p{
+    letter-spacing: 1px;
+}
+ .card2:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+ }
+ .card2:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+ }/*............................. .......................end of galle rotate card*/
+ .card3{/*..................koggala rotate card,,,,,,,,,,,*/
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-left: 76%;
+    margin-top: -348px;
+}
+.card3 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .8s;
+}
+.card3 .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card3 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card3 .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+}
+.card3 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+ .card3 .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 10px;
+    line-height: 10px;
+ }
+ .card3 .back .link a {
+    color: #f3f3f3;
+ }
+ .card3 .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+ }
+.card3 .back p{
+    letter-spacing: 1px;
+}
+ .card3:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+ }
+ .card3:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+ }
+ 
+ /*................................................. end of koggala rotate card*/
+
+
+    /*....... topic after flipping cards on page ........////////*/
+
+
+/* ..........                  .................unordered list in home page............*/
+    .unodered-list-topic-home{
+
+        margin-top: -38%;
+       margin-left: 23%;
+       font-style: inherit;
+       font-family: 'Poppins';
+       font-size: 50px; 
+       color: rgb(0, 125, 163);   
+    }
+
+
+
+                 .unodered-list-topic-home-border-box{
+                 flex-basis:10%;
+                border-radius: 10px;
+                margin: 50px;
+                padding: 50px;
+                box-sizing: border-box;
+                text-align: left;
+                align-content: center;
+                background-color: #4e4e4e45;
+                margin-inline: 250px;
+                font-family: 'Poppins';
+                line-height: 2;
+                justify-content: left;
+                }
+
+
+ .ordered-list-tpoic-home{
+
+    margin-top: 7%;
+    margin-left: 18%;
+    font-style: inherit;
+    font-family: 'Poppins';
+    font-size: 50px; 
+    color: rgb(0, 125, 163);  
+
+     }
+   
+
+     .ordered-list-tpoic-home--points{
+
+        margin-top: 5%;
+        margin-left: 38%;
+        margin-right: 17%;
+        list-style:decimal;
+        text-align: left;
+        justify-content: right;
+        line-height: 2;
+
+     }
+
+     #ordered-list-photo{
+
+        height: 50%;
+        width: 20%;
+        margin-top: -48vh;
+        margin-left: 14%;
+     }
+     #line-under-ordered-list{
+
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Poppins';
+     }
+
+
+     /*.....responsive......*/
+     
+
+
+    
+
+
+
+ /*,,,,,,,,,,,////////////end of home page......../////////../*/
+
+
+ 
+    
+ 
+ /*......................turtle category page......................*/
+
+
+ .photo3{ /*..........................TURTLE CATEGORIES */
+    width: 100%;
+    height: 60vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./10.jpg);
+    background-position: center;
+    background-size: cover; 
+    box-sizing: border-box;
+}
+
+
+
+ .categoriestpoic{
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 60px;
+    color: #f3f3f3;
+    text-align: center;
+    font-size: 40px;
+    color: rgba(250, 103, 5, 0.968);
+    text-transform: uppercase;
+
+
+   
+   }
+
+
+         /*................turtle categories 1 type......*/
+ .map1{
+    margin-left: 60%;
+    margin-top: -20%;
+  
+   }
+   .GreenTurtlephoto{
+    height: 35%;
+    width: 25%;
+    margin-top: 13vh;
+    margin-left: 20vh;
+
+   }
+   .GreenTurtlepara{
+    margin-left: 45%;
+    font-family:'Poppins', sans-serif  ;
+    font-size: 80px;
+    color: rgb(72, 149, 213);
+    margin-top: -10%;
+    font-weight:bold;
+    
+    
+
+   }
+    
+   
+   .GreenTurtlepara:before{
+
+    content: 'Green~TURTLE';
+    color: rgb(0, 84, 153);
+    position:absolute;
+    width: 0;
+    overflow: hidden;
+    transition: 0.9s;
+   
+
+   }
+
+   .GreenTurtlepara:hover:before{
+
+    width: 100%;
+   }
+
+
+   .GreenTurtlepara2{
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    margin-left:20vh;
+    margin-right:90vh ;
+    margin-top: 35vh;
+    font-size: 20px;
+    color: rgb(79, 78, 78);
+
+   }
+   .linebreak1{
+    width: 1100px;
+    margin-left: 20vh;
+    margin-top: 10vh;
+   }
+   /*................turtle categories 2 type......*/
+  
+   .OliveRidleyTurtlephoto{
+    height: 58vh;
+    width:42vh;
+   margin-left: 120vh;
+    margin-top: 10vh;
+   
+   }
+   .OliveRidleyTurtle{
+    margin-left: 5%;
+    font-weight: bold;
+    font-family:'Poppins', sans-serif  ;
+    font-size: 80px;
+    color: rgb(72, 149, 213);
+    margin-top: -20%
+
+
+
+   }
+
+   .OliveRidleyTurtle:before{
+
+    content: 'Oliveridley~TURTLE';
+    color: rgb(0, 84, 153);
+    position:absolute;
+    width: 0;
+    overflow: hidden;
+    transition: 0.9s;
+
+   }
+   .OliveRidleyTurtle:hover:before{
+
+    width: 100%;
+   }
+
+   .map2{
+    margin-left: 10%;
+    margin-top: 10%;
+ 
+   }
+   .OliveRidleyTurtlepara{
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    margin-left:80vh;
+    margin-right:25vh ;
+    margin-top: -26vh;
+    font-size: 20px;
+    color: rgb(79, 78, 78);
+
+   }
+   .linebreak2{
+    width: 1100px;
+    margin-left: 20vh;
+    margin-top: 15vh;
+   }
+
+   /*................turtle categories 3 type......*/
+  
+   .HawksbillTurtlephoto{
+   height: 35%;
+   width: 25%;
+   margin-top: 8vh;
+   margin-left: 20vh;
+   }
+
+
+   .HawksbillTurtle{
+    margin-left: 40%;
+    font-family:'Poppins', sans-serif  ;
+    font-size: 80px;
+    color: rgb(72, 149, 213);
+    margin-top: -10%;
+    font-weight:bold;
+    
+   }
+
+   .HawksbillTurtle:before{
+
+    content: 'Hawksbill~TURTLE';
+    color: rgb(0, 84, 153);
+    position:absolute;
+    width: 0;
+    overflow: hidden;
+    transition: 0.9s;
+   
+
+   }
+
+   .HawksbillTurtle:hover:before{
+
+    width: 100%;
+   }
+
+   .HawksbillTurtlepara{
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    margin-left:20vh;
+    margin-right:88vh ;
+    margin-top: 45vh;
+    font-size: 20px;
+    color: rgb(79, 78, 78);
+
+
+   }
+   .map3{
+
+    margin-left: 60%;
+    margin-top: -21%;
+   }
+
+   .linebreak3{
+    width: 1100px;
+    margin-left: 20vh;
+    margin-top: 10vh;
+   }
+
+   
+     /*................turtle categories 4 type......*/
+
+     .LoggerheadTurtlephoto{
+        height: 35%;
+        width: 25%;
+       margin-left: 120vh;
+        margin-top: 10vh;  
+     }
+     
+     .LoggerheadTurtle{
+        margin-left: 3%;
+        font-weight: bold;
+        font-family:'Poppins', sans-serif  ;
+        font-size: 80px;
+        color: rgb(72, 149, 213);
+        margin-top: -10%
+     }
+     .LoggerheadTurtle:before{
+
+        content: 'Loggerhead~TURTLE';
+        color: rgb(0, 84, 153);
+        position:absolute;
+        width: 0;
+        overflow: hidden;
+        transition: 0.9s;
+    
+       }
+       .LoggerheadTurtle:hover:before{
+    
+        width: 100%;
+       }
+
+     .LoggerheadTurtlepara{
+
+        font-family:'Poppins', sans-serif;
+        text-align: center;
+        margin-left:80vh;
+        margin-right:25vh ;
+        margin-top: 35vh;
+        font-size: 20px;
+        color: rgb(79, 78, 78);
+     }
+     .map4{
+        margin-left: 10%;
+        margin-top: -20%;
+     }
+
+     .linebreak4{
+        width: 1100px;
+        margin-left: 20vh;
+        margin-top: 10vh;
+     }
+  
+
+     /*................turtle categories 5 type.............*/
+
+     .LeatherbackTurtleephoto{
+
+        height: 35%;
+        width: 25%;
+        margin-top: 8vh;
+        margin-left: 20vh;
+     }
+
+     .LeatherbackTurtle{
+
+        margin-left: 38%;
+        font-family:'Poppins', sans-serif  ;
+        font-size: 80px;
+        color: rgb(72, 149, 213);
+        margin-top: -10%;
+        font-weight:bold;
+     }
+     .LeatherbackTurtle:before{
+
+        content: 'Leatherback~TURTLE';
+        color: rgb(0, 84, 153);
+        position:absolute;
+        width: 0;
+        overflow: hidden;
+        transition: 0.9s;
+    
+       }
+       .LeatherbackTurtle:hover:before{
+    
+        width: 100%;
+       }
+
+     .LeatherbackTurtlepara{
+
+        font-family:'Poppins', sans-serif;
+        text-align: center;
+        margin-left:20vh;
+        margin-right:88vh ;
+        margin-top: 36vh;
+        font-size: 20px;
+        color: rgb(79, 78, 78);
+     }
+
+     .map5{
+        margin-left: 57%;
+        margin-top: -18%;
+
+     }
+
+     .linebreak5{
+        width: 1100px;
+        margin-left: 20vh;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+     }
+
+     .categories{                        /*............turtle catogaries.............*/
+        font-family:'Mukta', sans-serif;
+        color: rgb(21, 21, 21);
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 40px;
+        margin-left: 60px;
+        margin-right: 60px;
+        text-align: center;
+        font-weight: bold;
+       }
+       
+
+         /*......................turtle ctegory tabel.........*/
+
+         .TurtleSummary {
+            border-collapse: collapse;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: auto;
+            width: auto;
+            color: #06257a;
+            background-color: #f2e8d4;
+        
+        }
+        
+        .TurtleSummary th,td {
+            border: 5px solid #F5FBFF;
+            padding: 20px;
+            text-align: left;
+            vertical-align: top;
+        }
+        
+        .t1, .t2, .t3, .t4, .t5 {
+            list-style: none;
+        }
+
+        tfoot td{
+
+            text-align: center;
+            padding: 0;   
+        }
+
+       
+
+
+        /*.................................hikkaduwa turtlecatogaries.......................*/
+
+
+        .photo4{ /*........................hikkaduwa TURLTE HATCHERIES */
+            width: 100%;
+            height: 60vh;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(./hikka.jpg);
+            background-position: center;
+            background-size: cover; 
+           
+            box-sizing: border-box;
+        }
+
+
+        .hikkawelcome{        /*hikka.....welcome part.........*/
+            text-align: center;
+            justify-content: center;
+            margin-top: 7%;
+            font-size: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            color: rgb(82, 82, 82);
+            
+           }
+
+
+        .hikkaduwatpoic{
+
+            font-family: 'Archivo Black', sans-serif;
+            margin-top: 120px;
+            color: #f3f3f3;
+            text-align: center;
+            font-size: 40px;
+            color: rgba(250, 103, 5, 0.968);
+            text-transform: uppercase;
+        }
+
+        .hikka1topic{
+            font-family:'Poppins', sans-serif  ;
+            text-align: right;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 6%;
+            color: rgb(72, 149, 213);
+
+        }
+
+
+        .hikkamap{
+            margin-top: 5vh;
+            width: 80%;
+            height: 60%;
+            margin-left: 140px;
+            margin-bottom: 5vh;
+        }
+
+        .linebreakhikka1{
+            margin-top: 10vh;
+           width: 1100px;
+           margin-left: 20vh;
+        }
+
+        .hikkaalltopics{
+            flex-basis:50%;
+            border-radius: 10px;
+            margin: 50px;
+            padding: 50px;
+            box-sizing: border-box;
+            text-align: center;
+            align-content: center;
+            background-color: #47e0c4a6;
+            margin-inline: 10px;
+        }
+
+        .hikkaturtletopic1{
+
+            margin-top: -3vh;
+        }
+        
+        .hikkapara{
+
+           text-align: justify;
+           margin-left: 2%;
+           margin-right: 2%;
+        }
+
+        .hikkaturtletopic2{
+
+            margin-right: 1100px;
+            color: rgb(52, 52, 52);
+         
+
+        }
+
+       
+        .blog-post{
+          
+            width: min(1200px, 100%);
+            padding:20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            cursor: pointer;
+            margin-left: 120px;
+            margin-top: 8%;
+
+        }
+
+        .post{
+            width: calc(33% - 10px);
+            overflow: hidden;
+        }
+
+        .post-img{
+
+            width: 100%;
+            border-radius: 6px;
+            transition: .3s linear;
+        }
+
+        .image-text{
+
+            background-color: aliceblue;
+            margin: 0 20px;
+            padding: 30px;
+            border-radius: 6px;
+            transform: translateY(-60px);
+            transition: .3s linear;
+        }
+
+        .image-text h3{
+
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .date{
+
+            font-size: 15px;
+            font-style: italic;
+            color: #000;
+        }
+        .post:hover .post-img{
+
+            transform: translateY(30px);
+
+        }
+        
+        .post:hover .image-text{
+
+            transform: translateY(-80px);
+
+        }
+        @media screen and (max-width: 600px){
+        .blog-post{
+            justify-content: center;
+        }
+            .post {
+            width: min(600px, 100%);
+
+            }
+        
+        }
+        
+        .linebreakhikka{
+
+            width: 1100px;
+            margin-left: 20vh;
+            margin-top: 10px;
+        }
+       
+
+/*,..........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,contact info page start*/
+
+
+           
+           
+           .contactus-pic{ /*.........contact us... background pic*/
+
+            background: url(./cntacus2.jpg);
+            height: 62vh;
+           
+        }
+
+        
+
+           .contact-info{
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 15vh;
+        }
+
+        .card-contact{
+
+            position: relative;
+            flex: 1;
+            max-width: 300px;
+            height: 140px;
+            background-color: gray;
+            margin: 20px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+                    /*................icon css part......*/
+        .icon{              
+            font-size: 32px;
+            color: rgb(249, 249, 249);
+            transition:  .3s linear;
+        }
+        
+        .card-contact:hover .icon{
+              
+                transform: scale(3);
+                opacity: 0;
+        }
+
+        .card-content h3,
+         .card-content span{
+
+                position: absolute;
+               left: 50%;
+               transform: translateX(-50%) ;
+               font-size: 16px;
+               opacity: 0;
+            
+        }
+
+
+            .card-content h3{
+                top: 20px;
+                text-transform: uppercase;
+                color: orange;
+
+            }
+
+            .card-content span{
+
+                bottom: 20px;
+                color: whitesmoke;
+                font-weight: 500;
+            }
+
+            .card-contact:hover h3{
+                opacity: 1;
+                top: 46px;
+                transition: .2s linear .3s;
+
+            }
+
+            .card-contact:hover span{
+                opacity: 1;
+                bottom: 46px;
+                transition: .3s linear .3s;
+
+            }
+
+
+          /*,..........,,,,,,,,,,,,,,,,,,,,,,,,,,,,end,,,,,,,contact info page start*/  
+
+          
+/*,..........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,go to top.........*/
+            .button1{
+    
+                border-radius: 10px;
+                display: inline-block;
+                text-decoration: none;
+                color: rgb(4, 3, 3);
+                border: 1px solid rgb(8, 8, 8);
+                padding: 8px 20px;
+                font-size: 10px;
+                background: transparent;
+                position:relative;
+                cursor: pointer;
+                margin-left: 90%;
+                margin-bottom: 15px;
+            }
+            .button1:hover{
+                border: 1px solid hsl(0, 0%, 100%);
+                background: orange;
+                transition: 1s ;
+            }
+
+            /*,..........,,,,,,,,,,,,,,,,,,,,,,,end of,,,,,,,,,,,,go to top.........*/
+
+            /*......................................threats........for .....turtles.......*/
+
+
+
+
+
+            .photo6{ /*..................THREATS TO TURTLES */
+                width: 100%;
+                height: 60vh;
+                background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./11.jpg);
+                background-position: center;
+                background-size: cover; 
+            
+                box-sizing: border-box;
+            }
+
+
+                #threatsmaintopic{
+
+                        font-family: 'Archivo Black', sans-serif;
+                        margin-top: 90px;
+                        color: #f3f3f3;
+                        text-align: center;
+                        font-size: 40px;
+                        color: rgba(250, 103, 5, 0.968);
+                        text-transform: uppercase;
+
+
+                }
+
+            .intro-heading-threats{
+
+                font-family:'Poppins', sans-serif  ; 
+                text-align: center;
+                margin-top: 50px;
+                font-size: 40px;
+                color: rgb(59, 150, 224);
+            }
+
+            .introduction-to-threats{
+                
+                justify-content: center ;
+                text-align: center;
+                font-family:'Archivo Black', sans-serif;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 2%;
+                font-size: 18px;
+                letter-spacing: 1%;
+
+
+            }
+
+
+
+            /*....................solution buuton for 1 threat....................*/
+
+
+            #polution-sol
+            {
+                font-size: 1.2em;
+                margin-top: 1%;
+                margin-left: 60%;
+                color: whitesmoke;
+                background-color:#064a97;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 20px;
+                border-color: whitesmoke;
+                cursor: pointer;
+            }
+
+            
+            .threatslinebreak1{
+
+                margin-top: 10vh;
+                width: 1100px;
+                margin-left: 20vh;
+
+            }
+
+            .threat-1-topic{
+
+                font-family:'Archivo Black', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 130px;
+                margin-left: 35%;
+                font-size: 90px;
+                color:rgba(250, 103, 5, 0.968);
+
+            }
+
+
+            .threat1photo{
+                height: 400px;
+                width: 380px;
+                margin-top: -5%;
+                margin-left: 10%;
+                margin-bottom: 10%;
+                transition: 1s ease;
+                border-radius: 5%;
+            }
+
+            .threat1photo:hover{
+                -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                 transform: scale(1.2);
+                transition: 1s ease;
+            }
+
+            .threat-1-topic-info{
+
+                font-family:'Poppins', sans-serif;
+              text-align: justify;
+                justify-content: center;
+                margin-left:40%;
+                margin-right:2% ;
+                margin-top: -460px;
+                font-size: 20px;
+                color: rgb(79, 78, 78);
+
+
+            }
+
+
+            .threat-1-topic-info-consequences--prevent{
+                text-transform: uppercase;
+            }
+            .threat-1-topic-info-consequences--prevent h1{
+                font-size: 40px;
+            }
+            
+            .threat-1-consequences{
+                flex-basis:50%;
+                border-radius: 10px;
+                margin: 50px;
+                padding: 50px;
+                margin-right: 51%;
+                box-sizing: border-box;
+                text-align: center;
+                align-content: center;
+                background-color: #0096873d;
+               
+            
+            }
+            .threat-1-prevent{
+                flex-basis:50%;
+                border-radius: 10px;
+                margin: 50px;
+                padding: 50px;
+                margin-left: 51%;
+                margin-top: -25%;
+                box-sizing: border-box;
+                text-align: center;
+                align-content: center;
+                background-color: #0096873d;
+               
+            
+            }
+
+            /*.............threat 2 .......*/
+
+            #Climate-Change-sol
+            {
+                font-size: 1.2em;
+                margin-top: 1%;
+                margin-left: 60%;
+                color: whitesmoke;
+                background-color:#064a97;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 20px;
+                border-color: whitesmoke;
+                cursor: pointer;
+            }
+
+            .threat-2-consequences{
+                flex-basis:50%;
+                border-radius: 10px;
+                margin: 50px;
+                padding: 50px;
+                margin-right: 51%;
+                box-sizing: border-box;
+                text-align: center;
+                align-content: center;
+                background-color: #0096873d;
+                margin-top: 5%;
+               
+            
+            }
+            .threat-2-prevent{
+                flex-basis:50%;
+                border-radius: 10px;
+                margin: 50px;
+                padding: 50px;
+                margin-left: 51%;
+                margin-top: -24.5%;
+                box-sizing: border-box;
+                text-align: center;
+                align-content: center;
+                background-color: #0096873d;
+                margin-top: -26%;
+               
+            
+            }
+
+            #Habitat-Loss-sol{
+
+                font-size: 1.2em;
+                margin-top: 1%;
+                margin-left: 60%;
+                color: whitesmoke;
+                background-color:#064a97;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 20px;
+                border-color: whitesmoke;
+            }
+
+
+            .threat-3-consequences{
+                flex-basis:50%;
+                border-radius: 10px;
+                margin: 50px;
+                padding: 50px;
+                margin-right: 51%;
+                box-sizing: border-box;
+                text-align: center;
+                align-content: center;
+                background-color: #0096873d;
+                margin-top: 7%;
+               
+            
+            }
+            .threat-3-prevent{
+                flex-basis:50%;
+                border-radius: 10px;
+                margin: 50px;
+                padding: 50px;
+                margin-left: 51%;
+                margin-top: -24.5%;
+                box-sizing: border-box;
+                text-align: center;
+                align-content: center;
+                background-color: #0096873d;
+                margin-top: -27%;
+            
+               
+            
+            }
+
+
+            .button-threats{
+                font-family:'Poppins' ;
+                display: inline-block;
+                color: rgb(102, 112, 115);
+                border: 3px solid rgb(0, 0, 0);
+                padding: 12px 34px;
+                font-size: 20px;
+                font-weight: bold;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+                 margin-left: 16%;
+                margin-top: 50px;
+                margin-bottom: 30px;
+                border-radius: 10px;
+                
+            }
+            .button-threats:hover{
+            color: rgba(255, 115, 0, 0.737);
+            -webkit-text-stroke: 0.1008px
+            }
+
+
+
+            /*........................purchse and donate............*/
+
+
+            .phot0-donate{
+
+                
+                    width: 100%;
+                    height: 70vh;
+                    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),no-repeat center center fixed url(./doante/donate-home-2.jpg) ;
+                    background-position: center;
+                    padding-right: 0px;
+                  
+                  
+            
+                
+            }
+
+
+            #help-us-donate{
+
+                font-family: 'Archivo Black', sans-serif;
+                margin-top: 120px;
+                color: #ffffff98;
+                text-align: center;
+                font-size: 100px;
+                text-transform: uppercase;
+            }
+
+
+            #why-donate{
+
+             
+                font-family: 'Poppins';
+                font-size: 50px; 
+                color: rgb(0, 125, 163); 
+                font-weight: bold;  
+                margin-left: 38%;
+                margin-top: 18%;
+            }
+
+
+            #why-donate-para{
+
+                flex-basis:50%;
+                border-radius: 7px;
+                margin: 50px;
+                padding: 50px;
+                margin-right: 5%;
+                box-sizing: border-box;
+                text-align: center;
+                align-content: center;
+                background-image: url(./doante/donate-homee.jpg);
+                color: #f8f2e7;
+
+            }
+
+            #sick-turtle-photo{
+
+                height: 90%;
+                width: 25%;
+                border-radius: 10px;
+                margin-left: 20%;
+                margin-top: 9%;
+            }
+
+
+            #sick-turtle-topic{
+
+                font-family: 'Poppins';
+                font-size: 50px; 
+                color: rgb(0, 125, 163); 
+                font-weight: bold;  
+                margin-left: 53%;
+                margin-top: -62vh;
+            }
+
+            #sick-turtle-para{
+
+                font-family: 'Mukta', sans-serif;
+                text-align: left;
+                margin-top: 40px;
+                margin-left: 50%;
+                margin-right: 12%;
+                font-size: 20px;
+                font-stretch: condensed;
+                font-weight: 10px;
+                color: rgb(33, 33, 33);
+                font-weight: bold;
+
+            }
+
+            .linebreakdonate{
+                width: 1100px;
+                margin-left: 20vh;
+                margin-top: 90px;
+
+            }
+
+
+
+           /*.......donate buying things.......*/
+            
+            .item-row{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 5%;
+            }
+            .item-box{
+                flex-basis: 15%;
+                box-shadow: 2px 3px 5px grey;
+                padding: 10px;
+                text-align: center;
+            }
+            
+            .item-box img{
+                width: 100%;
+            }
+            .item-box h2{
+                margin:20px 0px;
+            }
+            .item-box h3{
+                background: black;
+                color: white;
+                padding: 10px;
+            }
+            .item-box:hover{
+                transform: translateY(-20px);
+                transition: 0.4s ease;
+            }
+            #donate-items{
+                padding: 100px 0px;
+
+            }
+            
+            #buy{
+                text-align: center;
+                font-size: 300%;
+                font-weight: 2000;
+            
+            }
+
+
+
+
+
+            /*.....................purchse and donate.......form....*/
+
+            
+.head{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    
+}/*The main topic*/
+
+
+.form{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(27, 27, 27, 0.715);
+    padding: 20px;
+    border: 5px solid rgba(0, 255, 225, 0.818);
+    border-radius: 15px;;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+
+    
+}/*The donation form*/
+
+.tree{
+    display: flex;
+    justify-content: space-around;
+}/*The images*/
+
+.word{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+}/*The info*/
+
+
+
+
+
+
+
+
+/*..........tickets page..........*/
+
+.button-ticket{
+    font-family:'Poppins' ;
+    display: inline-block;
+    color: rgb(102, 112, 115);
+    border: 7px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 32px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+     margin-left: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    
+}
+.button-ticket:hover{
+color: rgb(255, 115, 0);
+-webkit-text-stroke: 0.1008px
+}
+
+
+            
+
+
+
+/*...........new ........ css*/
+
+
+            
+          
+            
